@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="helloworld_tests.HelloWorldTest-20180611160004" skipped="0" tests="1" time="0.004" timestamp="2018-06-11T16:00:04">
+	<testcase classname="helloworld_tests.HelloWorldTest" name="test_should_issue_hello_world_message" time="0.004" timestamp="2018-06-11T16:00:04">
+		<failure message="
+Wanted but not invoked:  write('Hello world of Python\n')
+Instead got:             [write('Hello world of Python 2nd version\n')]" type="VerificationError">
+<![CDATA[Traceback (most recent call last):
+  File "/home/jayant/project/src/unittest/python/helloworld_tests.py", line 12, in test_should_issue_hello_world_message
+    verify(out).write("Hello world of Python\n")
+  File "/usr/lib/python3.6/site-packages/mockito/invocation.py", line 218, in __call__
+    self.verification.verify(self, len(matched_invocations))
+  File "/usr/lib/python3.6/site-packages/mockito/verification.py", line 83, in verify
+    str(list(reversed(invocation.mock.invocations)))))
+mockito.verification.VerificationError: 
+Wanted but not invoked:  write('Hello world of Python\n')
+Instead got:             [write('Hello world of Python 2nd version\n')]
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
